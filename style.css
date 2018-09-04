@@ -7,7 +7,7 @@
 
 
 body {
-    background-color: orange;
+    background-color: orangered;
     font-family: 'Lato', sans-serif;
     color: white;
     position: relative;
@@ -18,10 +18,13 @@ body {
 }
 
 
+h2 {
+    text-transform: capitalize;
+}
 
 nav {
     display: flex;
-    background-color: #8ad0f1;
+    background-color: darkred;
     padding: 2px;
     font-family: 'Oswald', sans-serif;
     flex-wrap: wrap;
@@ -29,6 +32,24 @@ nav {
     justify-content: center;
 
 
+}
+
+.menu-item {
+    background-color: darkred;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.menu-item:hover {
+    background-color: #ff0000;
+    /* Green */
+    color: white;
 }
 
 .main-container {
@@ -58,4 +79,35 @@ nav {
     .main-container {
         grid-template-columns: 1fr;
     }
+}
+
+
+#modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    display: none;
+
+}
+
+#modal-content {
+    width: 70vw;
+    height: 70vh;
+    background-color: rgba(250, 250, 250, 1);
+    margin: auto;
+
+}
+
+
+#modal.vis {
+    display: block;
+
+
+}
+
+.modal-billede {
+    width: 50vw;
+    height: auto;
 }
